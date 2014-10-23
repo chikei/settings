@@ -3,3 +3,11 @@
 	name = TzeKai Lee
 [core]
 	editor = vim
+[color]
+        status = auto
+        branch = auto
+        interactive = auto
+        diff = auto
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
