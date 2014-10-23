@@ -27,6 +27,7 @@ Plugin 'hail2u/vim-css3-syntax'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'gkz/vim-ls'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,6 +36,7 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 set background=dark
+colorscheme desert
 
 set expandtab
 set shiftwidth=2
@@ -59,6 +61,15 @@ set history=700
 
 syntax enable
 
+set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set number
 set laststatus=2
 set ruler
+
+" Key mapping to stop the search highlight
+nmap <silent> <F2>      :nohlsearch<CR>
+imap <silent> <F2> <C-O>:nohlsearch<CR>
+
+nmap <silent> <F7> :NERDTreeToggle<CR>
+" mapping esc to easier key
+inoremap jj <Esc>
