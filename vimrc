@@ -28,6 +28,9 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'digitaltoad/vim-jade'
 Plugin 'gkz/vim-ls'
 Plugin 'mileszs/ack.vim'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'vimwiki/vimwiki'
+Plugin 'lukerandall/haskellmode-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -73,3 +76,6 @@ imap <silent> <F2> <C-O>:nohlsearch<CR>
 nmap <silent> <F7> :NERDTreeToggle<CR>
 " mapping esc to easier key
 inoremap jj <Esc>
+
+" GHC
+au BufEnter *.hs compiler ghc
