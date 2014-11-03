@@ -33,6 +33,7 @@ Plugin 'gkz/vim-ls'
 Plugin 'mileszs/ack.vim'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vimwiki/vimwiki'
+Plugin 'bling/vim-airline'
 Plugin 'lukerandall/haskellmode-vim'
 
 " All of your Plugins must be added before the following line
@@ -67,7 +68,7 @@ set history=700
 
 syntax enable
 
-set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
+" set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set number
 set laststatus=2
 set ruler
