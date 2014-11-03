@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+Plugin 'altercation/vim-colors-solarized'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'scrooloose/nerdtree'
@@ -41,7 +42,7 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 set background=dark
-colorscheme desert
+colorscheme solarized
 
 set expandtab
 set shiftwidth=2
