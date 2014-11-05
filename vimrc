@@ -69,7 +69,7 @@ set history=700
 syntax enable
 
 " set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
-set number
+set rnu
 set laststatus=2
 set ruler
 
