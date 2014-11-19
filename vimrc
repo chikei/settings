@@ -35,6 +35,8 @@ Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
 Plugin 'lukerandall/haskellmode-vim'
+Plugin 'wesQ3/vim-windowswap'
+    
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,7 +45,6 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 set background=dark
-colorscheme solarized
 
 set expandtab
 set shiftwidth=2
