@@ -82,6 +82,9 @@ nmap <silent> <F7> :NERDTreeToggle<CR>
 " mapping esc to easier key
 inoremap jj <Esc>
 
+" stripspace thanks to git
+map <Leader>s :%!git stripspace<CR>
+
 " GHC
 au BufEnter *.hs compiler ghc
 
