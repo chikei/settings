@@ -36,7 +36,7 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
 Plugin 'lukerandall/haskellmode-vim'
 Plugin 'wesQ3/vim-windowswap'
-    
+Plugin 'kien/ctrlp.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
