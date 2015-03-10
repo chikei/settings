@@ -1,0 +1,5 @@
+--ignore-dir=.idea/
+--ignore-dir=node_modules/ 
+
+--type-add=jade:ext:jade
+--type-add=sbt:ext:sbt
