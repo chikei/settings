@@ -37,6 +37,7 @@ Plugin 'bling/vim-airline'
 Plugin 'lukerandall/haskellmode-vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'kien/ctrlp.vim'
+Plugin 'AndrewRadev/linediff.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -71,6 +72,7 @@ syntax enable
 
 " set statusline=%<%f\ %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%)\ %P
 set rnu
+set number
 set laststatus=2
 set ruler
 
@@ -111,3 +113,6 @@ inoremap <expr><C-h> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 inoremap <expr><C-y>  neocomplete#close_popup()
 inoremap <expr><C-e>  neocomplete#cancel_popup()
+
+" force .md to markdown instread of Modula-2
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
