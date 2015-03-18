@@ -78,6 +78,14 @@ set rnu
 set number
 set laststatus=2
 set ruler
+set showmatch
+set mat=2
+
+"rainbow parens
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 " Key mapping to stop the search highlight
 nmap <silent> <F2>      :nohlsearch<CR>
