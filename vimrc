@@ -41,14 +41,14 @@ Plugin 'lukerandall/haskellmode-vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'kien/ctrlp.vim'
 Plugin 'AndrewRadev/linediff.vim'
+Plugin 'chrisbra/vim-diff-enhanced'
+Plugin 'JuliaLang/julia-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-set t_Co=256
 syntax on
-set background=dark
 
 set expandtab
 set shiftwidth=2
@@ -80,6 +80,9 @@ set laststatus=2
 set ruler
 set showmatch
 set mat=2
+
+set background=dark
+colorscheme solarized
 
 "rainbow parens
 au VimEnter * RainbowParenthesesToggle
@@ -127,3 +130,6 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 
 " force .md to markdown instread of Modula-2
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+
+" improve startup time by disable X clipboard
+set clipboard=exclude:.*
