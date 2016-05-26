@@ -45,7 +45,7 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump npm docker)
+plugins=(git autojump npm docker zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -82,3 +82,6 @@ export PATH="$PATH:$HOME/bin"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
+eval "$(thefuck --alias)"
+
