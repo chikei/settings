@@ -45,15 +45,15 @@ HIST_STAMPS="mm/dd/yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git autojump npm docker zsh-syntax-highlighting)
+plugins=(git autojump npm docker zsh-syntax-highlighting thefuck copydir copyfile history jsontools vundle zsh_reload gitignore)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 export PATH="$PATH:$HOME/npm/bin"
-export PATH="$PATH:$HOME/bin"
+export PATH="$HOME/bin:$PATH"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -81,7 +81,3 @@ export PATH="$PATH:$HOME/bin"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
-
-eval "$(thefuck --alias)"
-
