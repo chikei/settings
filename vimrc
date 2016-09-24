@@ -37,12 +37,14 @@ Plugin 'mileszs/ack.vim'
 Plugin 'michaeljsmith/vim-indent-object'
 Plugin 'vimwiki/vimwiki'
 Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lukerandall/haskellmode-vim'
 Plugin 'wesQ3/vim-windowswap'
 Plugin 'kien/ctrlp.vim'
 Plugin 'AndrewRadev/linediff.vim'
 Plugin 'chrisbra/vim-diff-enhanced'
 Plugin 'JuliaLang/julia-vim'
+Plugin 'jlanzarotta/bufexplorer'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,7 +84,14 @@ set showmatch
 set mat=2
 
 set background=dark
+let g:solarized_termcolors=256
 colorscheme solarized
+let g:airline_theme="base16_solarized"
+
+"airline
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline#extensions#tabline#fnamemod = ':t'
 
 "rainbow parens
 au VimEnter * RainbowParenthesesToggle
