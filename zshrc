@@ -51,9 +51,24 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+## we don't need open autojump in browser anyway....
+unfunction jo
+
+## local bins' npm home/bin
 export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH"
 export PATH="$PATH:$HOME/npm/bin"
 export PATH="$HOME/bin:$PATH"
+
+## just infinite history
+HISTSIZE=999999999
+SAVEHIST=$HISTSIZE
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+
+## backward kill is more useful than default's kill lin
+bindkey \^U backward-kill-line
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
