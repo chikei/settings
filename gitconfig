@@ -11,5 +11,9 @@
 [alias]
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    st = status --branch --short
+    co = checkout
+    unstage = reset HEAD --
+    amend = commit --amend --no-edit
 [push]
 	default = simple
