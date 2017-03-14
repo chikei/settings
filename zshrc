@@ -70,6 +70,9 @@ setopt HIST_IGNORE_ALL_DUPS
 ## backward kill is more useful than default's kill lin
 bindkey \^U backward-kill-line
 
+## make less smarter
+export LESS="-F -X $LESS"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
